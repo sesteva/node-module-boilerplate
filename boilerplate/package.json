@@ -13,7 +13,7 @@
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "jest"
 	},
 	"files": [
 		"index.js"
@@ -23,7 +23,6 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"xo": "^0.24.0"
+		"jest": "^24.8.0"
 	}
 }

@@ -1,13 +1,5 @@
-import test from 'ava';
-import moduleName from '.';
+import sum from ".";
 
-test('title', t => {
-	t.throws(() => {
-		moduleName(123);
-	}, {
-		instanceOf: TypeError,
-		message: 'Expected a string, got number'
-	});
-
-	t.is(moduleName('unicorns'), 'unicorns & rainbows');
+test("adds 1 + 2 to equal 3", () => {
+	expect(sum(1, 2)).toBe(3);
 });
